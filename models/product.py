@@ -61,7 +61,7 @@ class ProductShopee:
         self.manufacturing_details: str = ""
         self.packer_details: str = ""
         self.importer_details: str = ""
-        return   
+        return
 
     def __str__(self) -> str:
         return json.dumps(self.__dict__)
@@ -73,10 +73,10 @@ class ProductShopee:
         product_shopee.product_description = prd.description
 
         for i in range(len(prd.images)):
+            if i >= 8:
+                break
             setattr(product_shopee, f"product_photos_{i+1}", prd.images[i])
-        
+
         product_shopee.price = prd.price
 
         return product_shopee
-
-

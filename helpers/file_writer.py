@@ -2,7 +2,7 @@ import os
 
 OUTPUT_DIR = "dist"
 
-def write_to_file(data, filename):
+def write_to_file(data: str, filename: str):
     # Create the dist folder if it doesn't exist
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
