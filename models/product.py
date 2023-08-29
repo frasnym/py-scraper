@@ -25,7 +25,7 @@ class ProductShopee:
         self.variation_name_2: str = ""
         self.variant_for_variation_2: str = ""
         self.price: int = 0
-        self.stock: str = ""
+        self.stock: int = 1
         self.variation_code: str = ""
         self.hs_code: str = ""
         self.tax_code: str = ""
