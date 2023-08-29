@@ -17,3 +17,10 @@ pip ...
 # Deactivate the virtual environment
 deactivate
 ```
+
+### Generate a requirements.txt file
+```bash
+# Run the following command to generate a requirements.txt file:
+pip freeze > requirements.txt
+```
+
