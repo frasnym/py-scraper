@@ -1,11 +1,10 @@
 import re
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from helpers.file_writer import write_to_file
 
 from models.product import Product
 
-def get_by_url(url:str):
+def get_by_url(url:str)->Product:
     product = Product()
 
     chrome_options = Options() # Create ChromeOptions object
@@ -35,4 +34,4 @@ def get_by_url(url:str):
 
     driver.quit() # Close the browser
 
-    write_to_file(product.__str__(), "products.json") # Write output to file
+    return product
